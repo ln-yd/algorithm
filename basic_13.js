@@ -19,3 +19,18 @@ function PrintOdds1To255() {
   }
 }
 PrintOdds1To255();
+
+// 3. Print Ints and Sum 0 - 255
+// PrintIntsAndSum0To255()
+// Print integers from 0 to 255, and with each integer
+// print the sum so far.
+
+function PrintIntsAndSum0To255() {
+  var sum = 0;
+  for (var i = 0; i <= 255; i++) {
+    sum = sum + i;
+    console.log("i=" + i + " Sum=" + sum);
+  }
+}
+
+PrintIntsAndSum0To255();
