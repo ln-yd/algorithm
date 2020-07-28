@@ -34,3 +34,15 @@ function PrintIntsAndSum0To255() {
 }
 
 PrintIntsAndSum0To255();
+
+// 4. Iterate and Print Array
+// Iterate through a given array, printing each value.
+//   PrintArrayVals(arr)
+
+function PrintArrayVals(arr) {
+  for (var i = 0; i < arr.length; i++) {
+    console.log(arr[i]);
+  }
+}
+
+PrintArrayVals([2, 3, 4, 51, 2]);
