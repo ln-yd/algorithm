@@ -46,3 +46,20 @@ function PrintArrayVals(arr) {
 }
 
 PrintArrayVals([2, 3, 4, 51, 2]);
+
+// 5. Find and Print Max
+// PrintMaxOfArray(arr)
+// Given an array, find and print its largest element
+
+function PrintMaxOfArray(arr) {
+  //assumption: list is not empty
+  var largest = arr[0]; //2=>45=>50
+  for (var i = 1; i < arr.length; i++) {
+    if (arr[i] > largest) {
+      //i=0>
+      largest = arr[i];
+    }
+  }
+  console.log(largest);
+}
+PrintMaxOfArray([2, 45, 6, 2, 3, 50]);
