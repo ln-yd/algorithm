@@ -63,3 +63,19 @@ function PrintMaxOfArray(arr) {
   console.log(largest);
 }
 PrintMaxOfArray([2, 45, 6, 2, 3, 50]);
+
+// 6. Get and Print Average
+// PrintAverageOfArray(arr)
+// Analyze an array’s values and print the average.
+
+function PrintAverageOfArray(arr) {
+  var sum = 0;
+  var avg = 0;
+  for (var i = 0; i < arr.length; i++) {
+    sum = sum + arr[i];
+  }
+  avg = sum / arr.length;
+  console.log(avg);
+}
+
+PrintAverageOfArray([3, 67, 5, 8, 1]);
