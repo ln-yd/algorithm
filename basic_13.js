@@ -79,3 +79,19 @@ function PrintAverageOfArray(arr) {
 }
 
 PrintAverageOfArray([3, 67, 5, 8, 1]);
+
+// 7. Array with Odds
+// ReturnOddsArray1To255()
+// Create an array with all the odd integers between 1
+// and 255(inclusive).
+
+function ReturnOddsArray1To255() {
+  arr = [];
+  for (var i = 1; i < 256; i += 2) {
+    arr.push(i);
+    console.log(arr);
+  }
+  return arr;
+}
+
+ReturnOddsArray1To255();
