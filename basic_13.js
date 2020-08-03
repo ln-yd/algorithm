@@ -89,9 +89,26 @@ function ReturnOddsArray1To255() {
   arr = [];
   for (var i = 1; i < 256; i += 2) {
     arr.push(i);
-    console.log(arr);
+    // console.log(arr);
   }
   return arr;
 }
 
 ReturnOddsArray1To255();
+
+// 8. Square the Values
+// SquareArrayVals(arr)
+// Square each value in a given array, returning that
+// same array with changed values.
+
+function SquareArrayVals(arr) {
+  var square = 0;
+  for (var i = 0; i < arr.length; i++) {
+    square = arr[i] * arr[i];
+    console.log(square);
+    arr[i] = square;
+  }
+  return arr;
+}
+
+console.log(SquareArrayVals([1, 3, 4, 6, 342]));
