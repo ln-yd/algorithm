@@ -112,3 +112,19 @@ function SquareArrayVals(arr) {
 }
 
 console.log(SquareArrayVals([1, 3, 4, 6, 342]));
+
+// 9. Greater than Y
+// ReturnArrayCountGreaterThanY(arr, y)
+// Given an array and a value Y, count and print the number of array values greater than Y.
+
+function ReturnArrayCountGreaterThanY(arr, y) {
+  var count = 0;
+  var larger = 0;
+  for (var i = 0; i < arr.length; i++) {
+    if (arr[i] > y) {
+      count = count + 1;
+    }
+  }
+  return count;
+}
+console.log(ReturnArrayCountGreaterThanY([2, 3, 1, 5, 6], 3));
