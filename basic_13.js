@@ -128,3 +128,24 @@ function ReturnArrayCountGreaterThanY(arr, y) {
   return count;
 }
 console.log(ReturnArrayCountGreaterThanY([2, 3, 1, 5, 6], 3));
+
+// 10. Zero Out Negative Numbers
+// ZeroOutArrayNegativeVals(arr)
+// Return the given array, after setting any negative values to zero.
+
+//iterate through array
+//find negative
+//repalce with zero
+//return array
+
+function ZeroOutArrayNegativeVals(arr) {
+  for (var i = 0; i < arr.length; i++) {
+    if (arr[i] < 0) {
+      arr[i] = 0;
+      console.log(arr[i]);
+    }
+  }
+  return arr;
+}
+
+console.log(ZeroOutArrayNegativeVals([-1, 4, 6, -3, 5]));
