@@ -172,3 +172,20 @@ function PrintMaxMinAverageArrayVals(arr) {
 }
 
 PrintMaxMinAverageArrayVals([2, 4, 6, 2, 5, 64]);
+
+// 12. Shift Array Values
+// ShiftArrayValsLeft(arr)
+// Given an array, move all values forward(to the left) by one index, dropping the first value and leaving a 0(zero) value at the end of the array.
+
+function shiftArr(arr) {
+  var holdOne = arr[0];
+  var holdTwo = arr[1];
+  for (var i = 1; i < arr.length; i++) {
+    arr[i - 1] = arr[i];
+    console.log(arr);
+  }
+  arr[arr.length - 1] = 0;
+  return arr;
+}
+
+console.log(shiftArr([2, 3, 5, 6, 7]));
